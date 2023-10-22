@@ -1,0 +1,149 @@
+/* Wrapper for the entire post */
+.post {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e9e9e9;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+/* Header section */
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.post-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ddd; /* Placeholder for user profile picture */
+}
+
+.post-user-info {
+  margin-left: 1rem;
+}
+
+.post-username {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.post-timestamp {
+  color: #777;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+/* Content section */
+.post-content {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* Image section (you can use placeholders for now) */
+.post-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Like, Comment, Share, and Options buttons */
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+}
+
+.post-action {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.post-action:hover {
+  color: #1877f2; /* Facebook blue for hover effect */
+}
+
+.post-action i {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+/* Divider between post and actions */
+.post-divider {
+  height: 1px;
+  background-color: #ddd;
+  margin: 1rem 0;
+}
+
+/* Comments section */
+.post-comments {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.comment-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ddd; /* Placeholder for user profile picture */
+}
+
+.comment-content {
+  margin-left: 1rem;
+}
+
+.comment-username {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.comment-text {
+  font-size: 0.9rem;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
