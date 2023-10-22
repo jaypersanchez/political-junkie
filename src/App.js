@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <h1>My Social Media Feed</h1>
+        <h1>Political Junkie</h1>
         <Routes>
           <Route
             path="/"

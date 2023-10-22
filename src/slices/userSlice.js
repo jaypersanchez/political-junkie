@@ -7,11 +7,11 @@ const userSlice = createSlice({
     setUser: (state, action) => {
       return action.payload; // Set the user to the payload (e.g., username)
     },
-    clearUser: (state) => {
+    logoutUser: (state) => {
       return null; // Clear the user (e.g., log out)
     },
   },
 });
 
-export const { setUser, clearUser } = userSlice.actions;
+export const { setUser, logoutUser } = userSlice.actions;
 export default userSlice.reducer;

@@ -9,7 +9,6 @@ function Login({ onLogin }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-
   const handleLogin = () => {
     // Simulate a successful login
     if (username && password) {
