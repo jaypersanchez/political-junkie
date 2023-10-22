@@ -2,33 +2,23 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { setUser } from './slices/userSlice';
-import { Register } from './Register'
 
-function Login({ onLogin }) {
+function Register({ onRegister }) {
 
   const dispatch = useDispatch();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = () => {
-    // Simulate a successful login
-    if (username && password) {
-      // Replace this with actual user data
-      const user = { username, name: username };
-      dispatch(setUser(user)); // Dispatch the setUser action
-      onLogin(username);
-    }
-  }
-
+  
   const handleRegister = () => {
     // Implement your registration logic here
     // You can redirect the user to a registration page or show a registration form.
-    //onRegister(username);
+    onRegister(username);
   };
 
   return (
-    <div className="login">
-      <h2>Login</h2>
+    <div className="register">
+      <h2>Register</h2>
       <input
         type="text"
         placeholder="Username"
@@ -41,10 +31,9 @@ function Login({ onLogin }) {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
-      <button onClick={handleLogin}>Login</button>
-      <button onClick={handleRegister}>👉 Not a member? Register Here 👈</button>
+      <button onClick={handleRegister}>Register</button>
     </div>
   );
 }
 
-export default Login;
+export default Register;

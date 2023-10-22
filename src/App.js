@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import './App.css';
 import Login from './Login';
 import Feed from './Feed';
+import Register from './Register'
 
 function App() {
   const [user, setUser] = useState(null);
@@ -10,6 +11,10 @@ function App() {
   const handleLogin = (username) => {
     setUser(username);
   };
+
+  const handleRegister = () => {
+    
+  }
 
   return (
     <Router>
@@ -23,6 +28,10 @@ function App() {
           <Route
             path="/login"
             element={!user ? <Login onLogin={handleLogin} /> : <Navigate to="/" />}
+          />
+          <Route
+            path="/register"
+            element={!user ? <Register onRegister={handleRegister} /> : <Navigate to="/" />}
           />
         </Routes>
       </div>
